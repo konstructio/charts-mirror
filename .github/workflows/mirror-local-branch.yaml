@@ -1,0 +1,51 @@
+name: "Mirror images into local Git branch"
+
+on:
+  push: # runs on any branch push
+  schedule:
+    - cron: "0 0 * * *" # runs every day at midnight
+  workflow_dispatch: # runs whenever the workflow is dispatched via the UI
+
+env:
+  REGISTRY_SOURCE: "charts.kubefirst.com"
+
+permissions:
+  contents: write
+
+jobs:
+  download-charts:
+    name: "Download Helm charts to local Git repository"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout repository branch"
+        uses: actions/checkout@v2
+        with:
+          ref: "charts"
+          fetch-depth: 0
+
+      - name: "Install Helm mirror"
+        run: |
+          cd /tmp
+          wget https://github.com/konstructio/helm-mirror/releases/download/v0.5.0/helm-mirror_linux_x86_64.tar.gz
+          tar -xzf helm-mirror_linux_x86_64.tar.gz
+          install -m 755 bin/mirror /usr/local/bin/helm-mirror
+          helm-mirror -h
+
+      - name: "Download a testing Chart"
+        if: github.ref != 'refs/heads/main'
+        run: |
+          helm-mirror https://$REGISTRY_SOURCE "$(pwd)" --chart-name=kubefirst --chart-version=2.4.13le --verbose
+
+      - name: "Download all Helm charts"
+        if: github.ref == 'refs/heads/main'
+        run: |
+          helm-mirror https://$REGISTRY_SOURCE "$(pwd)" --all-versions --verbose
+
+      - name: "Commit changes"
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions Bot"
+          git add .
+          git commit -m "Update Helm charts"
+          git push origin charts
