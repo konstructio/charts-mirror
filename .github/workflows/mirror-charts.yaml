@@ -47,7 +47,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "GitHub Actions Bot"
           git add .
-          git commit -m "Update Helm charts"
+          git commit -m "Update Helm charts" || true
           git push origin charts
 
   push-charts-to-museum:
