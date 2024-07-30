@@ -70,7 +70,7 @@ jobs:
 
       - name: "Validate Helm credentials"
         run: |
-          response="$(curl -s -o /dev/null -w "%{http_code}" -X POST "$REGISTRY_DESTINATION/api/charts")"
+          response="$(curl -u "$HELM_REPO_USERNAME:$HELM_REPO_PASSWORD" -s -o /dev/null -w "%{http_code}" -X POST "$REGISTRY_DESTINATION/api/charts")"
           if [ "$response" -ne 400 ]; then
             echo "Expected HTTP status code 400, got $response"
             exit 1
@@ -82,6 +82,9 @@ jobs:
             echo "Expected error message 'EOF', got '$error'"
             exit 1
           fi
+        env:
+          HELM_REPO_USERNAME: "${{ secrets.TEST_CHARTMUSEUM_USER }}"
+          HELM_REPO_PASSWORD: "${{ secrets.TEST_CHARTMUSEUM_PASSWORD }}"
 
       - name: "Upload Helm charts to a different museum"
         if: github.ref == 'refs/heads/main'
