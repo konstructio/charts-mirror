@@ -92,7 +92,7 @@ jobs:
         run: |
           # find each .tgz file in the current directory, then push
           # them to a remote museum
-          for tgz in $(find ./downloaded/ -name "*.tgz"); do
+          for tgz in $(find . -name "*.tgz"); do
             echo "Found Helm Chart ${tgz}"
             helm-push "${tgz}" "${REGISTRY_DESTINATION}" --force
           done
