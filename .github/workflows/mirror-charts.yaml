@@ -83,9 +83,9 @@ jobs:
           jsonpath "$.error" == "EOF"
           EOF
         env:
-          HELM_REPO_USERNAME: "${{ secrets.TEST_CHARTMUSEUM_USER }}"
-          HELM_REPO_PASSWORD: "${{ secrets.TEST_CHARTMUSEUM_PASSWORD }}"
-          REGISTRY_DESTINATION: "${REGISTRY_DESTINATION}"
+          HURL_HELM_REPO_USERNAME: "${{ secrets.TEST_CHARTMUSEUM_USER }}"
+          HURL_HELM_REPO_PASSWORD: "${{ secrets.TEST_CHARTMUSEUM_PASSWORD }}"
+          HURL_REGISTRY_DESTINATION: "${REGISTRY_DESTINATION}"
 
       - name: "Upload Helm charts to a different museum"
         if: github.ref == 'refs/heads/main'
