@@ -68,20 +68,12 @@ jobs:
           tar -xzf helm-push_0.10.4_linux_amd64.tar.gz
           install -m 755 bin/helm-cm-push /usr/local/bin/helm-push
 
+      - name: "Install Hurl"
+        uses: gacts/install-hurl@v1
+
       - name: "Validate Helm credentials"
         run: |
-          response="$(curl -u "${HELM_REPO_USERNAME@Q}:${HELM_REPO_PASSWORD@Q}" -s -o /dev/null -w "%{http_code}" -X POST "$REGISTRY_DESTINATION/api/charts")"
-          if [ "$response" -ne 400 ]; then
-            echo "Expected HTTP status code 400, got $response"
-            exit 1
-          fi
-
-          responseBody="$(curl -s -X POST "$REGISTRY_DESTINATION/api/charts")"
-          error=$(echo "$responseBody" | jq -r '.error')
-          if [ "$error" != "EOF" ]; then
-            echo "Expected error message 'EOF', got '$error'"
-            exit 1
-          fi
+          hurl auth-test.hurl
         env:
           HELM_REPO_USERNAME: "${{ secrets.TEST_CHARTMUSEUM_USER }}"
           HELM_REPO_PASSWORD: "${{ secrets.TEST_CHARTMUSEUM_PASSWORD }}"
