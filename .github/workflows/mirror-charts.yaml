@@ -70,7 +70,7 @@ jobs:
 
       - name: "Validate Helm credentials"
         run: |
-          response="$(curl -u "$HELM_REPO_USERNAME:$HELM_REPO_PASSWORD" -s -o /dev/null -w "%{http_code}" -X POST "$REGISTRY_DESTINATION/api/charts")"
+          response="$(curl -u "${HELM_REPO_USERNAME@Q}:${HELM_REPO_PASSWORD@Q}" -s -o /dev/null -w "%{http_code}" -X POST "$REGISTRY_DESTINATION/api/charts")"
           if [ "$response" -ne 400 ]; then
             echo "Expected HTTP status code 400, got $response"
             exit 1
