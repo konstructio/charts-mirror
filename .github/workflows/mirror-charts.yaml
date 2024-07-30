@@ -85,6 +85,7 @@ jobs:
         env:
           HELM_REPO_USERNAME: "${{ secrets.TEST_CHARTMUSEUM_USER }}"
           HELM_REPO_PASSWORD: "${{ secrets.TEST_CHARTMUSEUM_PASSWORD }}"
+          REGISTRY_DESTINATION: "${REGISTRY_DESTINATION}"
 
       - name: "Upload Helm charts to a different museum"
         if: github.ref == 'refs/heads/main'
