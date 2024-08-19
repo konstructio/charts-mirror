@@ -3580,6 +3580,76 @@ entries:
     version: 0.0.1-rc.01dd871
   console:
   - apiVersion: v2
+    appVersion: "5626116"
+    created: "2024-08-16T05:34:02.58556581Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: a0f35889e824ad3d4ad04cba3d22c90262f4025928c5fe845e827fa948232299
+    name: console
+    type: application
+    urls:
+    - charts/console-2.55.0.tgz
+    version: 2.55.0
+  - apiVersion: v2
+    appVersion: "5626116"
+    created: "2024-08-16T05:07:02.700908204Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: 7caee474ef3402c4943cb129e1105a251e49bba24a148b508440178f518140e1
+    name: console
+    type: application
+    urls:
+    - charts/console-2.55.0-rc.5626116.tgz
+    version: 2.55.0-rc.5626116
+  - apiVersion: v2
+    appVersion: e378cdf
+    created: "2024-08-16T04:23:45.147700821Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: 6394a48dce645e4184e050be81249ceb1eed4a444e337518286136b68fb347ed
+    name: console
+    type: application
+    urls:
+    - charts/console-2.54.0.tgz
+    version: 2.54.0
+  - apiVersion: v2
+    appVersion: 9ab210e
+    created: "2024-08-15T21:45:33.314983955Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: f9c7b31b732b37c3cac309e8a7644b895a8198edc348cea1667c573a7165b260
+    name: console
+    type: application
+    urls:
+    - charts/console-2.53.0.tgz
+    version: 2.53.0
+  - apiVersion: v2
+    appVersion: e793af9
+    created: "2024-08-15T21:12:06.039821722Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: 877c3c03bb815487d6c05481469113cd15c08ca45e412d58c8ee2ecdd9a81e37
+    name: console
+    type: application
+    urls:
+    - charts/console-2.53.0-rc.e793af9.tgz
+    version: 2.53.0-rc.e793af9
+  - apiVersion: v2
+    appVersion: 9ab210e
+    created: "2024-08-15T21:32:47.663048841Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: 437eb5f29f5c74ba9580cf15348ce81322078622e82c8e161c5a798c983a63cf
+    name: console
+    type: application
+    urls:
+    - charts/console-2.53.0-rc.9ab210e.tgz
+    version: 2.53.0-rc.9ab210e
+  - apiVersion: v2
+    appVersion: 81b3774
+    created: "2024-08-13T15:28:17.496277355Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: 33f373bc266974e338ec44548fb946e6fb02d5b03e3a40aeac4e17bc4905378a
+    name: console
+    type: application
+    urls:
+    - charts/console-2.53.0-rc.81b3774.tgz
+    version: 2.53.0-rc.81b3774
+  - apiVersion: v2
     appVersion: 4a75719
     created: "2024-08-07T23:45:37.238390079Z"
     description: A Helm chart for the Kubefirst Console
@@ -6370,6 +6440,16 @@ entries:
     - charts/console-2.1.7-rc.7ac8360.tgz
     version: 2.1.7-rc.7ac8360
   docs:
+  - apiVersion: v2
+    appVersion: bc6329f
+    created: "2024-08-14T17:42:09.055052056Z"
+    description: Kubefirst documentation Helm chart
+    digest: c6e114c6a4536dac51a3a01ae6a2b1031382e883ef9b8b70f28afeea1c60c24c
+    name: docs
+    type: application
+    urls:
+    - charts/docs-1.139.0.tgz
+    version: 1.139.0
   - apiVersion: v2
     appVersion: 92c7154
     created: "2024-07-25T13:25:17.075786137Z"
@@ -9168,6 +9248,82 @@ entries:
     - charts/kubefirst-2.5.0-rc1.tgz
     version: 2.5.0-rc1
   - apiVersion: v2
+    created: "2024-08-16T06:00:59.92120717Z"
+    dependencies:
+    - name: console
+      repository: https://charts.kubefirst.com
+      version: 2.55.0
+    - name: kubefirst-api
+      repository: https://charts.kubefirst.com
+      version: 0.98.0
+    - name: kubefirst-api-ee
+      repository: https://charts.kubefirst.com
+      version: 0.12.0
+    description: kubefirst helm chart
+    digest: 6fbd4ff5fead6e2f2249d90bb39890ee3482b3d8f06209f7b83983b355083700
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.4.17.tgz
+    version: 2.4.17
+  - apiVersion: v2
+    created: "2024-08-16T05:35:43.409876353Z"
+    dependencies:
+    - name: console
+      repository: https://charts.kubefirst.com
+      version: 2.55.0
+    - name: kubefirst-api
+      repository: https://charts.kubefirst.com
+      version: 0.98.0
+    - name: kubefirst-api-ee
+      repository: https://charts.kubefirst.com
+      version: 0.12.0
+    description: kubefirst helm chart
+    digest: af6815eeba16122c34111d60a7149f5ac58421abe487fb96538f791fd768d7b7
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.4.17-rc5.tgz
+    version: 2.4.17-rc5
+  - apiVersion: v2
+    created: "2024-08-16T05:07:42.897186435Z"
+    dependencies:
+    - name: console
+      repository: https://charts.kubefirst.com
+      version: 2.55.0-rc.5626116
+    - name: kubefirst-api
+      repository: https://charts.kubefirst.com
+      version: 0.98.0
+    - name: kubefirst-api-ee
+      repository: https://charts.kubefirst.com
+      version: 0.12.0
+    description: kubefirst helm chart
+    digest: 0757128f5bd248c99218f48868c2ad9e9788a2bf7df1c99d724d478291317844
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.4.17-rc4.tgz
+    version: 2.4.17-rc4
+  - apiVersion: v2
+    created: "2024-08-16T04:25:27.152514094Z"
+    dependencies:
+    - name: console
+      repository: https://charts.kubefirst.com
+      version: 2.54.0
+    - name: kubefirst-api
+      repository: https://charts.kubefirst.com
+      version: 0.98.0
+    - name: kubefirst-api-ee
+      repository: https://charts.kubefirst.com
+      version: 0.12.0
+    description: kubefirst helm chart
+    digest: a860905273a55c266848f6a2e3e1b81449a8c29d104b143399a448e0a1703637
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.4.17-rc3.tgz
+    version: 2.4.17-rc3
+  - apiVersion: v2
     created: "2024-08-07T23:59:42.946782477Z"
     dependencies:
     - name: console
@@ -9187,6 +9343,63 @@ entries:
     - charts/kubefirst-2.4.16.tgz
     version: 2.4.16
   - apiVersion: v2
+    created: "2024-08-15T21:47:05.96960338Z"
+    dependencies:
+    - name: console
+      repository: https://charts.kubefirst.com
+      version: 2.53.0
+    - name: kubefirst-api
+      repository: https://charts.kubefirst.com
+      version: 0.98.0
+    - name: kubefirst-api-ee
+      repository: https://charts.kubefirst.com
+      version: 0.12.0
+    description: kubefirst helm chart
+    digest: 6db645a66725ebe2f11aee75ceb8b1cb9c2247e81b31efd430f1646216e33014
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.4.16-rc5.tgz
+    version: 2.4.16-rc5
+  - apiVersion: v2
+    created: "2024-08-15T21:39:10.371158284Z"
+    dependencies:
+    - name: console
+      repository: https://charts.kubefirst.com
+      version: 2.53.0-rc.9ab210e
+    - name: kubefirst-api
+      repository: https://charts.kubefirst.com
+      version: 0.98.0
+    - name: kubefirst-api-ee
+      repository: https://charts.kubefirst.com
+      version: 0.12.0
+    description: kubefirst helm chart
+    digest: 6afad3f25777b0492236422c8aefbef0a30287aaca4cf6f187c5839eb5102956
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.4.16-rc4.tgz
+    version: 2.4.16-rc4
+  - apiVersion: v2
+    created: "2024-08-15T21:33:28.121356468Z"
+    dependencies:
+    - name: console
+      repository: https://charts.kubefirst.com
+      version: 2.53.0-rc.9ab210e
+    - name: kubefirst-api
+      repository: https://charts.kubefirst.com
+      version: 0.98.0-rc.520e753
+    - name: kubefirst-api-ee
+      repository: https://charts.kubefirst.com
+      version: 0.12.0
+    description: kubefirst helm chart
+    digest: 90fb6f63b1ab4b0f6d847322c477120981a73c19d9f29cd40db343c4830a2e40
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.4.16-rc3.tgz
+    version: 2.4.16-rc3
+  - apiVersion: v2
     created: "2024-08-07T23:47:09.371227002Z"
     dependencies:
     - name: console
@@ -9205,6 +9418,25 @@ entries:
     urls:
     - charts/kubefirst-2.4.16-rc2.tgz
     version: 2.4.16-rc2
+  - apiVersion: v2
+    created: "2024-08-15T20:58:34.963458094Z"
+    dependencies:
+    - name: console
+      repository: https://charts.kubefirst.com
+      version: 2.52.0
+    - name: kubefirst-api
+      repository: https://charts.kubefirst.com
+      version: 0.98.0-rc.520e753
+    - name: kubefirst-api-ee
+      repository: https://charts.kubefirst.com
+      version: 0.12.0
+    description: kubefirst helm chart
+    digest: 039179d343b0c2446422371a9e338cb632bd32a83f64cb50fbcba078b44594f2
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.4.16-rc1.tgz
+    version: 2.4.16-rc1
   - apiVersion: v2
     created: "2024-08-06T18:35:38.459632994Z"
     dependencies:
@@ -19006,6 +19238,56 @@ entries:
     version: 0.0.1
   kubefirst-api:
   - apiVersion: v2
+    appVersion: 520e753
+    created: "2024-08-15T21:37:49.125051324Z"
+    description: A Helm chart for Kubernetes
+    digest: 32b312557a6b09439e2dbc887dd153c6342bb48d37349da0e5d36b1ee668bef2
+    name: kubefirst-api
+    type: application
+    urls:
+    - charts/kubefirst-api-0.98.0.tgz
+    version: 0.98.0
+  - apiVersion: v2
+    appVersion: f9a076f
+    created: "2024-08-15T20:21:58.363291495Z"
+    description: A Helm chart for Kubernetes
+    digest: 327c0a853ad4dfd555145e55d39fe6bd79bff283ea72b98ec94b4eb6178d91ce
+    name: kubefirst-api
+    type: application
+    urls:
+    - charts/kubefirst-api-0.98.0-rc.f9a076f.tgz
+    version: 0.98.0-rc.f9a076f
+  - apiVersion: v2
+    appVersion: cef3e1c
+    created: "2024-08-15T20:37:12.520167267Z"
+    description: A Helm chart for Kubernetes
+    digest: 0f80cf4b0bc93e29c0361c83bdd9ae5ea82af81af48b0a50b8762c635832eb4d
+    name: kubefirst-api
+    type: application
+    urls:
+    - charts/kubefirst-api-0.98.0-rc.cef3e1c.tgz
+    version: 0.98.0-rc.cef3e1c
+  - apiVersion: v2
+    appVersion: 520e753
+    created: "2024-08-15T20:57:54.064467085Z"
+    description: A Helm chart for Kubernetes
+    digest: 0361a92d602d31fcbc7249b0b651c596eb54149a938a02deaf1eb5d54366f377
+    name: kubefirst-api
+    type: application
+    urls:
+    - charts/kubefirst-api-0.98.0-rc.520e753.tgz
+    version: 0.98.0-rc.520e753
+  - apiVersion: v2
+    appVersion: 0559e3b
+    created: "2024-08-14T17:42:41.823095673Z"
+    description: A Helm chart for Kubernetes
+    digest: 2c193eb023071a0ee898ff1cfb1c4b79817d4dcb93ac60d0b547c1a603c1e7d4
+    name: kubefirst-api
+    type: application
+    urls:
+    - charts/kubefirst-api-0.98.0-rc.0559e3b.tgz
+    version: 0.98.0-rc.0559e3b
+  - apiVersion: v2
     appVersion: 2655b88
     created: "2024-08-06T18:00:45.529737744Z"
     description: A Helm chart for Kubernetes
@@ -27012,5 +27294,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2024-08-07T23:59:43Z"
+generated: "2024-08-16T06:01:00Z"
 serverInfo: {}
