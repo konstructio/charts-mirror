@@ -1,0 +1,66 @@
+name: "Mirror Helm Charts"
+
+on:
+  workflow_call:
+    inputs:
+      registry-destination:
+        type: string
+        required: true
+        description: "Repository to pull Helm charts from"
+      source-branch:
+        type: string
+        description: "Branch to commit downloaded Helm charts"
+        default: "charts"
+
+permissions:
+  contents: write
+
+jobs:
+  push-charts-to-museum:
+    name: "Checkout git-store"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout repository branch"
+        uses: actions/checkout@v2
+        with:
+          ref: "${{ inputs.target-branch }}"
+          fetch-depth: 0
+
+      - name: "Install Helm cm-push"
+        run: |
+          cd /tmp
+          wget https://github.com/chartmuseum/helm-push/releases/download/v0.10.4/helm-push_0.10.4_linux_amd64.tar.gz
+          tar -xzf helm-push_0.10.4_linux_amd64.tar.gz
+          install -m 755 bin/helm-cm-push /usr/local/bin/helm-push
+
+      - name: "Install Hurl"
+        uses: gacts/install-hurl@v1
+
+      - name: "Validate Helm credentials"
+        run: |
+          export HURL_REGISTRY_DESTINATION="${{ inputs.registry-destination }}"
+          hurl --test <<EOF
+          POST "${{ inputs.registry-destination }}"/api/charts
+          [BasicAuth]
+          {{HELM_REPO_USERNAME}}: {{HELM_REPO_PASSWORD}}
+
+          HTTP 400
+          [Asserts]
+          jsonpath "$.error" == "EOF"
+          EOF
+        env:
+          HURL_HELM_REPO_USERNAME: "${{ secrets.TEST_CHARTMUSEUM_USER }}"
+          HURL_HELM_REPO_PASSWORD: "${{ secrets.TEST_CHARTMUSEUM_PASSWORD }}"
+
+      - name: "Upload Helm charts to a different museum"
+        if: github.ref == 'refs/heads/main'
+        run: |
+          # find each .tgz file in the current directory, then push
+          # them to a remote museum
+          for tgz in $(find . -name "*.tgz"); do
+            echo "Found Helm Chart ${tgz}"
+            helm-push "${tgz}" "${{ inputs.registry-destination }}" --force
+          done
+        env:
+          HELM_REPO_USERNAME: "${{ secrets.TEST_CHARTMUSEUM_USER }}"
+          HELM_REPO_PASSWORD: "${{ secrets.TEST_CHARTMUSEUM_PASSWORD }}"

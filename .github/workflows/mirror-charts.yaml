@@ -1,101 +1,17 @@
 name: "Mirror Helm Charts"
 
 on:
-  push: # runs on any branch push
-  schedule:
-    - cron: "0 0 * * 1" # runs every Monday at midnight
+  # push: # runs on any branch push
   workflow_dispatch: # runs whenever the workflow is dispatched via the UI
 
 env:
-  REGISTRY_SOURCE: "https://charts.kubefirst.com"
-  REGISTRY_DESTINATION: "https://chartmuseum.freegitopsmagic.com"
+  REGISTRY_DESTINATION: "https://charts.konstruct.io/"
 
 permissions:
   contents: write
 
 jobs:
-  download-charts:
-    name: "Download charts to local Git repository"
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Checkout repository branch"
-        uses: actions/checkout@v2
-        with:
-          ref: "charts"
-          fetch-depth: 0
-
-      - name: "Install Helm mirror"
-        run: |
-          cd /tmp
-          wget https://github.com/konstructio/helm-mirror/releases/download/v0.5.0/helm-mirror_linux_x86_64.tar.gz
-          tar -xzf helm-mirror_linux_x86_64.tar.gz
-          install -m 755 bin/mirror /usr/local/bin/helm-mirror
-
-      - name: "Download a testing Chart"
-        if: github.ref != 'refs/heads/main'
-        run: |
-          helm-mirror "$REGISTRY_SOURCE" "$(pwd)" --chart-name=kubefirst --chart-version=2.4.13 --verbose
-
-      - name: "Download all Helm charts"
-        if: github.ref == 'refs/heads/main'
-        run: |
-          helm-mirror "$REGISTRY_SOURCE" "$(pwd)" --all-versions --verbose
-
-      - name: "Commit changes"
-        if: github.ref == 'refs/heads/main'
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions Bot"
-          git add .
-          git commit -m "Update Helm charts" || true
-          git push origin charts
-
-  push-charts-to-museum:
-    name: "Push Helm charts to Remote museum"
-    needs: download-charts
-    runs-on: ubuntu-latest
-    steps:
-      - name: "Checkout repository branch"
-        uses: actions/checkout@v2
-        with:
-          ref: "charts"
-          fetch-depth: 0
-
-      - name: "Install Helm cm-push"
-        run: |
-          cd /tmp
-          wget https://github.com/chartmuseum/helm-push/releases/download/v0.10.4/helm-push_0.10.4_linux_amd64.tar.gz
-          tar -xzf helm-push_0.10.4_linux_amd64.tar.gz
-          install -m 755 bin/helm-cm-push /usr/local/bin/helm-push
-
-      - name: "Install Hurl"
-        uses: gacts/install-hurl@v1
-
-      - name: "Validate Helm credentials"
-        run: |
-          export HURL_REGISTRY_DESTINATION="${REGISTRY_DESTINATION}"
-          hurl --test <<EOF
-          POST {{REGISTRY_DESTINATION}}/api/charts
-          [BasicAuth]
-          {{HELM_REPO_USERNAME}}: {{HELM_REPO_PASSWORD}}
-
-          HTTP 400
-          [Asserts]
-          jsonpath "$.error" == "EOF"
-          EOF
-        env:
-          HURL_HELM_REPO_USERNAME: "${{ secrets.TEST_CHARTMUSEUM_USER }}"
-          HURL_HELM_REPO_PASSWORD: "${{ secrets.TEST_CHARTMUSEUM_PASSWORD }}"
-
-      - name: "Upload Helm charts to a different museum"
-        if: github.ref == 'refs/heads/main'
-        run: |
-          # find each .tgz file in the current directory, then push
-          # them to a remote museum
-          for tgz in $(find . -name "*.tgz"); do
-            echo "Found Helm Chart ${tgz}"
-            helm-push "${tgz}" "${REGISTRY_DESTINATION}" --force
-          done
-        env:
-          HELM_REPO_USERNAME: "${{ secrets.TEST_CHARTMUSEUM_USER }}"
-          HELM_REPO_PASSWORD: "${{ secrets.TEST_CHARTMUSEUM_PASSWORD }}"
+  mirror-charts:
+    uses: konstructio/charts-mirror/.github/workflows/tpl-mirror-charts.yaml@mirror-only
+    with:
+      registry-destination: "${REGISTRY_DESTINATION}"

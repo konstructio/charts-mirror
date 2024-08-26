@@ -1,0 +1,24 @@
+name: "Backup and then Mirror Helm Charts"
+
+on:
+  # push: # runs on any branch push
+  schedule:
+    - cron: "0 0 * * 1" # runs every Monday at midnight
+  workflow_dispatch: # runs whenever the workflow is dispatched via the UI
+
+env:
+  REGISTRY_SOURCE: "https://charts.konstruct.io/"
+
+permissions:
+  contents: write
+
+jobs:
+  download-charts:
+    uses: konstructio/charts-mirror/.github/workflows/tpl-download-charts.yaml@mirror-only
+    with:
+      registry-source: "${REGISTRY_SOURCE}"
+
+  mirror-charts:
+    uses: konstructio/charts-mirror/.github/workflows/tpl-mirror-charts.yaml@mirror-only
+    with:
+      registry-destination: "${REGISTRY_DESTINATION}"
