@@ -1,0 +1,56 @@
+name: "Download Charts"
+
+on:
+  workflow_call:
+    inputs:
+      registry-source:
+        type: string
+        required: true
+        description: "Repository to pull Helm charts from"
+      target-branch:
+        type: string
+        description: "Branch to commit downloaded Helm charts"
+        default: "charts"
+      helm-mirror-version:
+          type: string
+          description: "Helm Mirror version"
+          default: "v0.5.0"
+
+jobs:
+  download-charts:
+    name: "Download charts to local Git repository"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout repository branch"
+        uses: actions/checkout@v2
+        with:
+          ref: "${{ inputs.target-branch }}"
+          fetch-depth: 0
+
+      - name: "Install Helm mirror"
+        run: |
+          cd /tmp
+          wget https://github.com/konstructio/helm-mirror/releases/download/${{ inputs.helm-mirror-version }}/helm-mirror_linux_x86_64.tar.gz
+          tar -xzf helm-mirror_linux_x86_64.tar.gz
+          install -m 755 bin/mirror /usr/local/bin/helm-mirror
+          cd -
+
+      - name: "Download a testing Chart"
+        if: github.ref != 'refs/heads/main'
+        run: |
+          helm-mirror "${{ inputs.registry-source }}" "$(pwd)" --chart-name=kubefirst --chart-version=2.4.13 --verbose
+          cat index.yaml
+
+      - name: "Download all Helm charts"
+        if: github.ref == 'refs/heads/main'
+        run: |
+          helm-mirror "${{ inputs.registry-source }}" "$(pwd)" --all-versions --verbose
+
+      - name: "Commit changes"
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "GitHub Actions Bot"
+          git add .
+          git commit -m "Update Helm charts" || true
+          git push origin ${{ inputs.target-branch }}
