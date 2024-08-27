@@ -30,13 +30,13 @@ jobs:
 
 
   download-charts:
-    uses: konstructio/charts-mirror/.github/workflows/tpl-download-charts.yaml@mirror-only
+    uses: ./.github/workflows/tpl-download-charts.yaml
     needs: pass-env-var-to-workflow
     with:
       registry-source: "${{ needs.pass-env-var-to-workflow.outputs.registry-source }}"
 
   mirror-charts:
-    uses: konstructio/charts-mirror/.github/workflows/tpl-mirror-charts.yaml@mirror-only
+    uses: ./.github/workflows/tpl-mirror-charts.yaml
     needs: pass-env-var-to-workflow
     with:
       registry-destination: "${{ needs.pass-env-var-to-workflow.outputs.registry-destination }}"
