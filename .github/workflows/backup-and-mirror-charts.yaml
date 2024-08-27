@@ -8,6 +8,7 @@ on:
 
 env:
   REGISTRY_SOURCE: "https://charts.konstruct.io/"
+  REGISTRY_DESTINATION: "https://charts.konstruct.io/"
 
 permissions:
   contents: write
