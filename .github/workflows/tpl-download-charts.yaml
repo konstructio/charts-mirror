@@ -11,6 +11,10 @@ on:
         type: string
         description: "Branch to commit downloaded Helm charts"
         default: "charts"
+      helm-mirror-version:
+          type: string
+          description: "Helm Mirror version"
+          default: "v0.5.0"
 
 jobs:
   download-charts:
@@ -26,7 +30,7 @@ jobs:
       - name: "Install Helm mirror"
         run: |
           cd /tmp
-          wget https://github.com/konstructio/helm-mirror/releases/download/v0.5.0/helm-mirror_linux_x86_64.tar.gz
+          wget https://github.com/konstructio/helm-mirror/releases/download/${{ inputs.helm-mirror-version }}/helm-mirror_linux_x86_64.tar.gz
           tar -xzf helm-mirror_linux_x86_64.tar.gz
           install -m 755 bin/mirror /usr/local/bin/helm-mirror
           cd -

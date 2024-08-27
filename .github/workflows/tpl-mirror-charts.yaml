@@ -11,6 +11,10 @@ on:
         type: string
         description: "Branch to commit downloaded Helm charts"
         default: "charts"
+      helm-push-version:
+          type: string
+          description: "Chart museum helm push binary version"
+          default: "0.10.4"
 
 permissions:
   contents: write
@@ -29,8 +33,8 @@ jobs:
       - name: "Install Helm cm-push"
         run: |
           cd /tmp
-          wget https://github.com/chartmuseum/helm-push/releases/download/v0.10.4/helm-push_0.10.4_linux_amd64.tar.gz
-          tar -xzf helm-push_0.10.4_linux_amd64.tar.gz
+          wget https://github.com/chartmuseum/helm-push/releases/download/v${{ inputs.helm-push-version }}/helm-push_${{ inputs.helm-push-version }}_linux_amd64.tar.gz
+          tar -xzf helm-push_${{ inputs.helm-push-version }}_linux_amd64.tar.gz
           install -m 755 bin/helm-cm-push /usr/local/bin/helm-push
 
       - name: "Install Hurl"
