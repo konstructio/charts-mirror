@@ -4,29 +4,11 @@ on:
   # push: # runs on any branch push
   workflow_dispatch: # runs whenever the workflow is dispatched via the UI
 
-env:
-  REGISTRY_DESTINATION: "https://charts.konstruct.io/"
-
 permissions:
   contents: write
 
 jobs:
-  # env context is not accessable in called workflow
-  # https://github.com/orgs/community/discussions/26671
-  # https://stackoverflow.com/questions/73305126/passing-env-variable-inputs-to-a-reusable-workflow
-  pass-env-var-to-workflow:
-    runs-on: ubuntu-latest
-    outputs:
-      registry-destination: ${{ steps.step1.outputs.REGISTRY_DESTINATION }}
-    steps:
-      - id: step1
-        run: echo "REGISTRY_DESTINATION=${REGISTRY_DESTINATION}" >> "$GITHUB_OUTPUT"
-
-
   mirror-charts:
     uses: ./.github/workflows/tpl-mirror-charts.yaml
-    needs: pass-env-var-to-workflow
     with:
-      registry-destination: "${{ needs.pass-env-var-to-workflow.outputs.registry-destination }}"
-
-
+      registry-destination: "https://charts.konstruct.io/"
