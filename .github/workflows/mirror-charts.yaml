@@ -12,3 +12,4 @@ jobs:
     uses: ./.github/workflows/tpl-mirror-charts.yaml
     with:
       registry-destination: "https://charts.konstruct.io/"
+    secrets: inherit
