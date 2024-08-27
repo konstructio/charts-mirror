@@ -27,6 +27,6 @@ jobs:
     uses: konstructio/charts-mirror/.github/workflows/tpl-mirror-charts.yaml@mirror-only
     needs: pass-env-var-to-workflow
     with:
-      registry-destination: "${{ needs.pass-env-var-to-workflow.outputs. registry-destination }}"
+      registry-destination: "${{ needs.pass-env-var-to-workflow.outputs.registry-destination }}"
 
 
