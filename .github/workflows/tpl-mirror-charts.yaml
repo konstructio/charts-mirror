@@ -7,7 +7,7 @@ on:
         type: string
         required: true
         description: "Repository to pull Helm charts from"
-      source-branch:
+      target-branch:
         type: string
         description: "Branch to commit downloaded Helm charts"
         default: "charts"

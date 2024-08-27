@@ -13,12 +13,29 @@ permissions:
   contents: write
 
 jobs:
+    # env context is not accessable in called workflow
+  # https://github.com/orgs/community/discussions/26671
+  # https://stackoverflow.com/questions/73305126/passing-env-variable-inputs-to-a-reusable-workflow
+  pass-env-var-to-workflow:
+    runs-on: ubuntu-latest
+    outputs:
+      registry-source: ${{ steps.step1.outputs.REGISTRY_SOURCE }}
+      registry-destination: ${{ steps.step2.outputs.REGISTRY_DESTINATION }}
+    steps:
+      - id: step1
+        run: echo "REGISTRY_SOURCE=${REGISTRY_SOURCE}" >> "$GITHUB_OUTPUT"
+      - id: step2 
+        run: echo "REGISTRY_DESTINATION=${REGISTRY_DESTINATION}" >> "$GITHUB_OUTPUT"
+
+
   download-charts:
     uses: konstructio/charts-mirror/.github/workflows/tpl-download-charts.yaml@mirror-only
+    needs: pass-env-var-to-workflow
     with:
-      registry-source: "${REGISTRY_SOURCE}"
+      registry-source: "${{ needs.pass-env-var-to-workflow.outputs.registry-source }}"
 
   mirror-charts:
     uses: konstructio/charts-mirror/.github/workflows/tpl-mirror-charts.yaml@mirror-only
+    needs: pass-env-var-to-workflow
     with:
-      registry-destination: "${REGISTRY_DESTINATION}"
+      registry-destination: "${{ needs.pass-env-var-to-workflow.outputs. registry-destination }}"
