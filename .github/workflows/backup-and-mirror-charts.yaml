@@ -6,10 +6,6 @@ on:
   #   - cron: "0 0 * * 1" # runs every Monday at midnight
   workflow_dispatch: # runs whenever the workflow is dispatched via the UI
 
-env:
-  REGISTRY_SOURCE: "https://charts.konstruct.io/"
-  REGISTRY_DESTINATION: "https://charts.konstruct.io/"
-
 permissions:
   contents: write
 
