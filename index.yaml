@@ -2,6 +2,175 @@ apiVersion: v1
 entries:
   colony:
   - apiVersion: v2
+    created: "2024-11-22T05:46:17.851508682Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.b2b570c
+    description: Colony helm chart
+    digest: 6b7d53781c2e0de07bff2e15dfc3cd15d45b60eb611edb8f0d34eb5717c6b9fd
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc9.tgz
+    version: 0.1.1-rc9
+  - apiVersion: v2
+    created: "2024-11-22T05:22:05.224421353Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.5d86b39
+    description: Colony helm chart
+    digest: 2ef2e6c22c58985688e13205cee23cc2faf77acc15b8fe531b5a62257b85480c
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc8.tgz
+    version: 0.1.1-rc8
+  - apiVersion: v2
+    created: "2024-11-22T05:11:32.540708813Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.948810f
+    description: Colony helm chart
+    digest: a8759de093510eeeae5e2745152b91129320dca7304dfd89bd2deb3b1bb47481
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc7.tgz
+    version: 0.1.1-rc7
+  - apiVersion: v2
+    created: "2024-11-22T03:59:53.584267627Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.e3b9b6f
+    description: Colony helm chart
+    digest: 0a3e6ad1b97f3d6456fab7a485d39d31e40f140b626c694f75fc3eb483c5cd1c
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc6.tgz
+    version: 0.1.1-rc6
+  - apiVersion: v2
+    created: "2024-11-22T02:40:39.584045662Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.6c85713
+    description: Colony helm chart
+    digest: 1ed76e369a3ed339a7a9faed3e37cb520a6b3fbcf53ed2c4c7aeb6e2fe458d84
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc5.tgz
+    version: 0.1.1-rc5
+  - apiVersion: v2
+    created: "2024-11-22T02:28:24.112965383Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.d468bc1
+    description: Colony helm chart
+    digest: d46d9f012aed6dcd83ae3205ac1b4b91e26b60b621f72f71bec08c67d1488f40
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc4.tgz
+    version: 0.1.1-rc4
+  - apiVersion: v2
+    created: "2024-11-22T02:14:56.131466756Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.81d5f9f
+    description: Colony helm chart
+    digest: a0bfcc480cc392ca8da6880b3fa70acc9df78cad866b6009ee00fd3bf625f756
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc3.tgz
+    version: 0.1.1-rc3
+  - apiVersion: v2
+    created: "2024-11-21T23:20:06.977700921Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.00faf7a
+    description: Colony helm chart
+    digest: 1da04e787b1e9abe2be4e74544952eb6040f7a05ae434b2958b7de10ebd2f27c
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc2.tgz
+    version: 0.1.1-rc2
+  - apiVersion: v2
+    created: "2024-11-22T06:55:50.798595769Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.17f116e
+    description: Colony helm chart
+    digest: d22f6b0eb6fcfc5f98219dc7cc860a7c2091640712a46037313869637b5f83fe
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc13.tgz
+    version: 0.1.1-rc13
+  - apiVersion: v2
+    created: "2024-11-22T06:10:40.127773395Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.9d5ec7d
+    description: Colony helm chart
+    digest: ae221efb7905c9610d2192144c34ef445b5c16be2af1ffd5608fef4badf5a505
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc12.tgz
+    version: 0.1.1-rc12
+  - apiVersion: v2
+    created: "2024-11-22T06:02:26.182955987Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.281cfb1
+    description: Colony helm chart
+    digest: 75197771aa523206f7e12e4f73f18f9b77b7dcddb5f7c48b73dc169675e7b801
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc11.tgz
+    version: 0.1.1-rc11
+  - apiVersion: v2
+    created: "2024-11-22T05:55:59.028322671Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.994e7bc
+    description: Colony helm chart
+    digest: 2d4bb6c8d35e84c3048a9741b4e0c5878fd6d458ee2ed36b70ddc4ea4308c774
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc10.tgz
+    version: 0.1.1-rc10
+  - apiVersion: v2
+    created: "2024-11-21T22:16:14.875659873Z"
+    dependencies:
+    - name: colony-agent
+      repository: https://charts.konstruct.io
+      version: 0.11.0-rc.6a4fd83
+    description: Colony helm chart
+    digest: d6c93a309108e37095408e53048e625b90793c7e0aa23b15afa3a4f845dbdefb
+    name: colony
+    type: application
+    urls:
+    - charts/colony-0.1.1-rc1.tgz
+    version: 0.1.1-rc1
+  - apiVersion: v2
     created: "2024-10-10T19:20:58.614527011Z"
     dependencies:
     - name: colony-agent
@@ -535,6 +704,146 @@ entries:
     - charts/colony-0.0.1-rc1.tgz
     version: 0.0.1-rc1
   colony-agent:
+  - apiVersion: v2
+    appVersion: e3b9b6f
+    created: "2024-11-22T03:59:01.116280835Z"
+    description: A Helm chart for Kubernetes
+    digest: 4e23505ddd2d753007d64a4a4a15345757079fed05a6e301dcfdbd57ec9703b8
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.e3b9b6f.tgz
+    version: 0.11.0-rc.e3b9b6f
+  - apiVersion: v2
+    appVersion: d468bc1
+    created: "2024-11-22T02:27:32.277058436Z"
+    description: A Helm chart for Kubernetes
+    digest: c27ae7e06134b4c4b54df10ff1d4afc87f116324c752b4f3d4f4204a60b439f1
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.d468bc1.tgz
+    version: 0.11.0-rc.d468bc1
+  - apiVersion: v2
+    appVersion: b2b570c
+    created: "2024-11-22T05:45:19.181364952Z"
+    description: A Helm chart for Kubernetes
+    digest: f6cb7648a29ebc1c3ae7c01ce8ff455e7e8bff38d77c8c79971a15c98cc0d6d5
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.b2b570c.tgz
+    version: 0.11.0-rc.b2b570c
+  - apiVersion: v2
+    appVersion: 9d5ec7d
+    created: "2024-11-22T06:09:21.390281727Z"
+    description: A Helm chart for Kubernetes
+    digest: 102612a31abd55cee7d7b95d8fce7cab655b5db1382a4f629d8325440af663f7
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.9d5ec7d.tgz
+    version: 0.11.0-rc.9d5ec7d
+  - apiVersion: v2
+    appVersion: 994e7bc
+    created: "2024-11-22T05:55:01.349314435Z"
+    description: A Helm chart for Kubernetes
+    digest: b015546197bacd186de447639d81737236032a8eb38ec14e871795df34de3879
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.994e7bc.tgz
+    version: 0.11.0-rc.994e7bc
+  - apiVersion: v2
+    appVersion: 948810f
+    created: "2024-11-22T05:10:33.194929629Z"
+    description: A Helm chart for Kubernetes
+    digest: 9522295a08237b0ec5f424d078cbf674ff72a4eb9f40fe2db4f5bc0e133df304
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.948810f.tgz
+    version: 0.11.0-rc.948810f
+  - apiVersion: v2
+    appVersion: 92fd07a
+    created: "2024-11-22T05:23:16.111742039Z"
+    description: A Helm chart for Kubernetes
+    digest: 483eb7ce9655e9036017746b31daa1461ffdd34c7284c5dc4f9f54f4c597f197
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.92fd07a.tgz
+    version: 0.11.0-rc.92fd07a
+  - apiVersion: v2
+    appVersion: 81d5f9f
+    created: "2024-11-22T02:13:49.259751111Z"
+    description: A Helm chart for Kubernetes
+    digest: 7ecebe5d2321cd6285e3fccd60ebf333f26b59ac5a0aa77e88169e716c6b9aca
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.81d5f9f.tgz
+    version: 0.11.0-rc.81d5f9f
+  - apiVersion: v2
+    appVersion: 6c85713
+    created: "2024-11-22T02:39:43.811018937Z"
+    description: A Helm chart for Kubernetes
+    digest: 06b5ff3c99dc3837b000336283f1a995434d2044833d8fa95f26d146067d2a95
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.6c85713.tgz
+    version: 0.11.0-rc.6c85713
+  - apiVersion: v2
+    appVersion: 6a4fd83
+    created: "2024-11-21T22:15:12.212413811Z"
+    description: A Helm chart for Kubernetes
+    digest: 880648313366f5de5f0524349c12f6416728a7a5e6570bc52ef932bcdb852799
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.6a4fd83.tgz
+    version: 0.11.0-rc.6a4fd83
+  - apiVersion: v2
+    appVersion: 5d86b39
+    created: "2024-11-22T05:21:00.903855709Z"
+    description: A Helm chart for Kubernetes
+    digest: 2b465754eddacc58b97f08238c8550d72d6455f823a8141e33666c1774b983f2
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.5d86b39.tgz
+    version: 0.11.0-rc.5d86b39
+  - apiVersion: v2
+    appVersion: 281cfb1
+    created: "2024-11-22T06:01:11.759372237Z"
+    description: A Helm chart for Kubernetes
+    digest: 91dd92382fcc462a3f6be829422b178b442279d8da4a8964e82910c9cef651e6
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.281cfb1.tgz
+    version: 0.11.0-rc.281cfb1
+  - apiVersion: v2
+    appVersion: 17f116e
+    created: "2024-11-22T06:54:39.935211644Z"
+    description: A Helm chart for Kubernetes
+    digest: 3a047aee0e5d79ec2d869c38d22771d1a5598c691ae318122a331666d12d54db
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.17f116e.tgz
+    version: 0.11.0-rc.17f116e
+  - apiVersion: v2
+    appVersion: 00faf7a
+    created: "2024-11-21T23:19:10.156844149Z"
+    description: A Helm chart for Kubernetes
+    digest: 3758d9a8c356456a6da3ad545b025e07b703ae3636316aa2fdda90cac04733b8
+    name: colony-agent
+    type: application
+    urls:
+    - charts/colony-agent-0.11.0-rc.00faf7a.tgz
+    version: 0.11.0-rc.00faf7a
   - apiVersion: v2
     appVersion: 50588fb
     created: "2024-10-10T16:30:30.032987386Z"
@@ -1711,6 +2020,16 @@ entries:
   console:
   - apiVersion: v2
     appVersion: 96dda0d
+    created: "2024-11-20T21:17:59.079219967Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: 49b8519b59f1284109c3e47c5eedefe465be2ea9d14f330c6c5774865ff4fb15
+    name: console
+    type: application
+    urls:
+    - charts/console-2.62.0.tgz
+    version: 2.62.0
+  - apiVersion: v2
+    appVersion: 96dda0d
     created: "2024-11-13T16:03:49.684237403Z"
     description: A Helm chart for the Kubefirst Console
     digest: d04336ba5aa7bdc0bc3b0aa870c501186a31698aec2943f425a6daf6d6e91e78
@@ -1891,6 +2210,16 @@ entries:
     version: 2.56.0-rc.91116d5
   docs-landing:
   - apiVersion: v2
+    appVersion: 20f70a0
+    created: "2024-11-19T16:17:10.103777122Z"
+    description: colony documentation Helm chart
+    digest: 7da4f95f2b06eb043e1dfd30761785648701b9559f3ff880311965713823bbbe
+    name: docs-landing
+    type: application
+    urls:
+    - charts/docs-landing-1.164.0.tgz
+    version: 1.164.0
+  - apiVersion: v2
     appVersion: ca264a8
     created: "2024-11-14T19:10:42.547265729Z"
     description: colony documentation Helm chart
@@ -1962,6 +2291,82 @@ entries:
     - charts/flappy-kray-0.1.0-rc.9783390.tgz
     version: 0.1.0-rc.9783390
   kubefirst:
+  - apiVersion: v2
+    created: "2024-11-21T16:31:47.569502268Z"
+    dependencies:
+    - name: console
+      repository: https://charts.konstruct.io
+      version: 2.62.0
+    - name: kubefirst-api
+      repository: https://charts.konstruct.io
+      version: 0.117.0
+    - name: kubefirst-api-ee
+      repository: https://charts.konstruct.io
+      version: 1.9.0
+    description: kubefirst helm chart
+    digest: cd6e2c2f4c4c2684973861457f7bc4a65498dacf359824956dbae76db45510fc
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.7.5.tgz
+    version: 2.7.5
+  - apiVersion: v2
+    created: "2024-11-20T21:26:42.112421908Z"
+    dependencies:
+    - name: console
+      repository: https://charts.konstruct.io
+      version: 2.62.0
+    - name: kubefirst-api
+      repository: https://charts.konstruct.io
+      version: 0.117.0
+    - name: kubefirst-api-ee
+      repository: https://charts.konstruct.io
+      version: 1.9.0
+    description: kubefirst helm chart
+    digest: 84ff141c4782f62c5379629659d28cc1d9302fea0c82fce0d46caee2130e3ecb
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.7.5-rc7.tgz
+    version: 2.7.5-rc7
+  - apiVersion: v2
+    created: "2024-11-20T21:20:12.598124685Z"
+    dependencies:
+    - name: console
+      repository: https://charts.konstruct.io
+      version: 2.62.0
+    - name: kubefirst-api
+      repository: https://charts.konstruct.io
+      version: 0.117.0-rc.781bca0
+    - name: kubefirst-api-ee
+      repository: https://charts.konstruct.io
+      version: 1.9.0
+    description: kubefirst helm chart
+    digest: 9e5071a19fa3ec5b9f0c4ca1f05d09ee56049d3e7ba82fe08fa37415c5b35112
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.7.5-rc6.tgz
+    version: 2.7.5-rc6
+  - apiVersion: v2
+    created: "2024-11-18T12:46:19.970190556Z"
+    dependencies:
+    - name: console
+      repository: https://charts.konstruct.io
+      version: 2.62.0-rc.96dda0d
+    - name: kubefirst-api
+      repository: https://charts.konstruct.io
+      version: 0.117.0-rc.781bca0
+    - name: kubefirst-api-ee
+      repository: https://charts.konstruct.io
+      version: 1.9.0
+    description: kubefirst helm chart
+    digest: 0d9a36e0dddab054218f4260fef3b6ff98b09c1ffeaa16d17193c90bdd447096
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.7.5-rc5.tgz
+    version: 2.7.5-rc5
   - apiVersion: v2
     created: "2024-11-13T16:04:51.3984667Z"
     dependencies:
@@ -4149,6 +4554,26 @@ entries:
     version: 2.5.0-rc10
   kubefirst-api:
   - apiVersion: v2
+    appVersion: 781bca0
+    created: "2024-11-20T21:24:16.763389971Z"
+    description: A Helm chart for Kubernetes
+    digest: a91732c1676fe3d66f7d1a9bc91d16cdcc3cd7631c14ffe8e77cefe1c2f452e0
+    name: kubefirst-api
+    type: application
+    urls:
+    - charts/kubefirst-api-0.117.0.tgz
+    version: 0.117.0
+  - apiVersion: v2
+    appVersion: 781bca0
+    created: "2024-11-18T12:45:26.725044536Z"
+    description: A Helm chart for Kubernetes
+    digest: 1b1dcf66a01a26a6994f0236d6a4b36f480199ea8206e26b84d99746f729e6e5
+    name: kubefirst-api
+    type: application
+    urls:
+    - charts/kubefirst-api-0.117.0-rc.781bca0.tgz
+    version: 0.117.0-rc.781bca0
+  - apiVersion: v2
     appVersion: c335a2b
     created: "2024-11-11T15:23:41.022247783Z"
     description: A Helm chart for Kubernetes
@@ -5532,6 +5957,102 @@ entries:
     version: 1.142.0
   kubefirst-pro:
   - apiVersion: v2
+    created: "2024-11-21T16:32:08.382536021Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.3.0
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.4.0
+    description: kubefirst pro helm chart
+    digest: 20596efcb47097d9c10bae25b5f4b1bb7b5adf0fbb4aef29cabcd91b01f69347
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.7.5.tgz
+    version: 2.7.5
+  - apiVersion: v2
+    created: "2024-11-20T19:01:39.144797356Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.3.0-rc.7bad538
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.3.0-rc.6785ae4
+    description: kubefirst pro helm chart
+    digest: 04f862187ccc7a65aadb967ea5b80f707dbfc233fcf3459c81e6d4e18d8c6a5f
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.7.5-rc9.tgz
+    version: 2.7.5-rc9
+  - apiVersion: v2
+    created: "2024-11-20T15:18:47.962306474Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.3.0-rc.42d99ff
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.3.0-rc.6785ae4
+    description: kubefirst pro helm chart
+    digest: 3f720b748879714222090b72d93e880de50ac651fee5f64c16735d748c6087b2
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.7.5-rc8.tgz
+    version: 2.7.5-rc8
+  - apiVersion: v2
+    created: "2024-11-20T01:10:41.824310764Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.3.0-rc.42d99ff
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.3.0-rc.0882be3
+    description: kubefirst pro helm chart
+    digest: 48448e2108c59e0f407991f214f501739d2d8ec988b66c7dc3dafac109d3f5c0
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.7.5-rc7.tgz
+    version: 2.7.5-rc7
+  - apiVersion: v2
+    created: "2024-11-19T23:20:38.429571386Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.3.0-rc.16fd791
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.3.0-rc.0882be3
+    description: kubefirst pro helm chart
+    digest: 927eb40e4ed47e1a145479265cd6cdd32a3c3d1d837a468a4591ad2c7cfdd500
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.7.5-rc6.tgz
+    version: 2.7.5-rc6
+  - apiVersion: v2
+    created: "2024-11-18T15:32:57.040353049Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.3.0-rc.16fd791
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.3.0-rc.f8d9c66
+    description: kubefirst pro helm chart
+    digest: 08910b5c89a3ed3aaa1084b7d3bf802bc6d3834c6ff04e94cea8c2240e29d798
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.7.5-rc5.tgz
+    version: 2.7.5-rc5
+  - apiVersion: v2
     created: "2024-11-13T21:29:52.253043686Z"
     dependencies:
     - name: kubefirst-pro-api
@@ -5579,6 +6100,70 @@ entries:
     urls:
     - charts/kubefirst-pro-2.7.5-rc2.tgz
     version: 2.7.5-rc2
+  - apiVersion: v2
+    created: "2024-11-21T05:49:42.09898538Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.3.0
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.4.0
+    description: kubefirst pro helm chart
+    digest: e3037d8035f8818875c891d2feff7a585c29e2d3e53ac7b23183f2b0569850f2
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.7.5-rc13.tgz
+    version: 2.7.5-rc13
+  - apiVersion: v2
+    created: "2024-11-21T05:30:50.108794853Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.3.0
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.4.0-rc.64a68bb
+    description: kubefirst pro helm chart
+    digest: f853c90fd8f37f889afbdd51b1bd8afd7b5e6e34d4f89ea7bd47378ee3b1048c
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.7.5-rc12.tgz
+    version: 2.7.5-rc12
+  - apiVersion: v2
+    created: "2024-11-20T21:57:13.20969337Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.3.0
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.3.0
+    description: kubefirst pro helm chart
+    digest: 0d92215e4eddecaa6e34bb7520ca88569f8ba50b0694ceaa256b2ac4d5a911b7
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.7.5-rc11.tgz
+    version: 2.7.5-rc11
+  - apiVersion: v2
+    created: "2024-11-20T21:36:28.70289264Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.3.0-rc.7bad538
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.3.0
+    description: kubefirst pro helm chart
+    digest: 326683f5f8ffefbbc434bf1b6823b8d488c9de8070283983659efa47ab3cf80d
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.7.5-rc10.tgz
+    version: 2.7.5-rc10
   - apiVersion: v2
     created: "2024-11-07T20:18:16.103475094Z"
     dependencies:
@@ -6509,6 +7094,46 @@ entries:
     version: 2.6.2-rc10
   kubefirst-pro-api:
   - apiVersion: v2
+    appVersion: 7bad538
+    created: "2024-11-20T21:54:54.421854114Z"
+    description: A Helm chart for Kubernetes
+    digest: b290eef95e60d4ba8c430213455d65e5f1e0758aced3d163f6488128788a8bd6
+    name: kubefirst-pro-api
+    type: application
+    urls:
+    - charts/kubefirst-pro-api-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
+    appVersion: 7bad538
+    created: "2024-11-20T19:00:24.603786174Z"
+    description: A Helm chart for Kubernetes
+    digest: 4ab104c6c2951a5b3afd1b9e4cdad2c877de2a7b0265f26db76d296287f1515b
+    name: kubefirst-pro-api
+    type: application
+    urls:
+    - charts/kubefirst-pro-api-0.3.0-rc.7bad538.tgz
+    version: 0.3.0-rc.7bad538
+  - apiVersion: v2
+    appVersion: 42d99ff
+    created: "2024-11-20T01:09:12.082651885Z"
+    description: A Helm chart for Kubernetes
+    digest: 36ffba863aa458a9807232fbb852dabcc16f5916773a37d5781d13fbf3005db4
+    name: kubefirst-pro-api
+    type: application
+    urls:
+    - charts/kubefirst-pro-api-0.3.0-rc.42d99ff.tgz
+    version: 0.3.0-rc.42d99ff
+  - apiVersion: v2
+    appVersion: 16fd791
+    created: "2024-11-18T15:31:39.838054324Z"
+    description: A Helm chart for Kubernetes
+    digest: fda3c2fca1e1fdaa3754103173b516f9c84f0434f35eb24af0e17a6fc242b7d7
+    name: kubefirst-pro-api
+    type: application
+    urls:
+    - charts/kubefirst-pro-api-0.3.0-rc.16fd791.tgz
+    version: 0.3.0-rc.16fd791
+  - apiVersion: v2
     appVersion: edc4221
     created: "2024-11-06T15:56:20.005466266Z"
     description: A Helm chart for Kubernetes
@@ -6958,7 +7583,58 @@ entries:
     urls:
     - charts/kubefirst-pro-api-0.1.0-rc.3148643.tgz
     version: 0.1.0-rc.3148643
+  kubefirst-pro-docs:
+  - apiVersion: v2
+    appVersion: 254a59f
+    created: "2024-11-19T17:42:17.01995167Z"
+    description: Kubefirst Pro documentation Helm chart
+    digest: 1bfaed16bad144c1062afb6512120ac7179ff6929f959f438d88bc4daa1d3af5
+    name: kubefirst-pro-docs
+    type: application
+    urls:
+    - charts/kubefirst-pro-docs-1.166.0.tgz
+    version: 1.166.0
+  - apiVersion: v2
+    appVersion: 17c39ec
+    created: "2024-11-19T17:13:25.957986806Z"
+    description: Kubefirst Pro documentation Helm chart
+    digest: 4bbc2a81d2c879ebf00e132d03338dcc6e035aee760da469302309e85d95b413
+    name: kubefirst-pro-docs
+    type: application
+    urls:
+    - charts/kubefirst-pro-docs-1.165.0.tgz
+    version: 1.165.0
   kubefirst-pro-ui:
+  - apiVersion: v2
+    appVersion: 64a68bb
+    created: "2024-11-21T05:47:04.097041388Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: d20d6fa47ac4e74cdeb3d5d8bc6e82ee3048b85c08614c0e1b85c2a63d28c7b4
+    name: kubefirst-pro-ui
+    type: application
+    urls:
+    - charts/kubefirst-pro-ui-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: 64a68bb
+    created: "2024-11-21T05:29:27.32979543Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: 38859139853057b78fadb06fdef9474e791eed4fb8bcdd39edfe718d156da1ba
+    name: kubefirst-pro-ui
+    type: application
+    urls:
+    - charts/kubefirst-pro-ui-0.4.0-rc.64a68bb.tgz
+    version: 0.4.0-rc.64a68bb
+  - apiVersion: v2
+    appVersion: 6785ae4
+    created: "2024-11-20T21:34:03.268758556Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: 02d04458d6c6853696af12f64595c05e223b915ca36a967f72371ad0aa0fa79e
+    name: kubefirst-pro-ui
+    type: application
+    urls:
+    - charts/kubefirst-pro-ui-0.3.0.tgz
+    version: 0.3.0
   - apiVersion: v2
     appVersion: f8d9c66
     created: "2024-11-13T21:28:58.139939498Z"
@@ -6990,6 +7666,16 @@ entries:
     - charts/kubefirst-pro-ui-0.3.0-rc.ade5431.tgz
     version: 0.3.0-rc.ade5431
   - apiVersion: v2
+    appVersion: 6785ae4
+    created: "2024-11-20T15:17:49.761445033Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: c520080a47ad7350581a8cb3d084daab12cba5fc036c6577fa34237ce88a45ea
+    name: kubefirst-pro-ui
+    type: application
+    urls:
+    - charts/kubefirst-pro-ui-0.3.0-rc.6785ae4.tgz
+    version: 0.3.0-rc.6785ae4
+  - apiVersion: v2
     appVersion: 1ca6008
     created: "2024-11-12T21:27:11.835926169Z"
     description: A Helm chart for the Kubefirst Console
@@ -6999,6 +7685,16 @@ entries:
     urls:
     - charts/kubefirst-pro-ui-0.3.0-rc.1ca6008.tgz
     version: 0.3.0-rc.1ca6008
+  - apiVersion: v2
+    appVersion: 0882be3
+    created: "2024-11-19T23:18:48.505000182Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: 520e8e4e245e270f94f49d05751fff03ce62a3571ae868e4349923601af55f7c
+    name: kubefirst-pro-ui
+    type: application
+    urls:
+    - charts/kubefirst-pro-ui-0.3.0-rc.0882be3.tgz
+    version: 0.3.0-rc.0882be3
   - apiVersion: v2
     appVersion: 68d6bbf
     created: "2024-11-06T16:02:06.243198243Z"
@@ -9328,6 +10024,16 @@ entries:
     - charts/saas-0.11.0-rc.1a09bdf.tgz
     version: 0.11.0-rc.1a09bdf
   - apiVersion: v2
+    appVersion: 2ab976a
+    created: "2024-11-20T20:36:22.262682523Z"
+    description: repository for kubefirst saas components
+    digest: 51b00b902a4c61a78f27788369dcfe3aba7b1c8b23d63b2bd5d48a82ae0c5b8e
+    name: saas
+    type: application
+    urls:
+    - charts/saas-0.3.0.tgz
+    version: 0.3.0
+  - apiVersion: v2
     appVersion: dacca35
     created: "2024-09-09T13:45:19.655743996Z"
     description: repository for kubefirst saas components
@@ -9337,6 +10043,36 @@ entries:
     urls:
     - charts/saas-0.3.0-rc.dacca35.tgz
     version: 0.3.0-rc.dacca35
+  - apiVersion: v2
+    appVersion: 8d60c74
+    created: "2024-11-20T15:32:14.101490244Z"
+    description: repository for kubefirst saas components
+    digest: d5ed0c28f198faac8939fc33fe387b8e68d92ad8f1bf220d673e77765b9f15e3
+    name: saas
+    type: application
+    urls:
+    - charts/saas-0.3.0-rc.8d60c74.tgz
+    version: 0.3.0-rc.8d60c74
+  - apiVersion: v2
+    appVersion: 2ab976a
+    created: "2024-11-20T16:20:19.664207664Z"
+    description: repository for kubefirst saas components
+    digest: fff0aa7827651935d38106b0018ca2ebc3ed26ec81a5632fa3da3b57d828f9fa
+    name: saas
+    type: application
+    urls:
+    - charts/saas-0.3.0-rc.2ab976a.tgz
+    version: 0.3.0-rc.2ab976a
+  - apiVersion: v2
+    appVersion: 22443d4
+    created: "2024-11-20T15:46:37.626180703Z"
+    description: repository for kubefirst saas components
+    digest: 6613cd496e4415f05789a438e8655ca497a0c0b0065991e93e6489e0f91ba12c
+    name: saas
+    type: application
+    urls:
+    - charts/saas-0.3.0-rc.22443d4.tgz
+    version: 0.3.0-rc.22443d4
   - apiVersion: v2
     appVersion: a44b739
     created: "2024-09-05T04:16:46.967123533Z"
@@ -9398,6 +10134,36 @@ entries:
     urls:
     - charts/saas-api-0.11.0.tgz
     version: 0.11.0
+  - apiVersion: v2
+    appVersion: "7131170"
+    created: "2024-11-21T15:55:12.614232858Z"
+    description: repository for kubefirst saas-api components
+    digest: af4f536f5ec54435138c9b2c1418df7282d1b90c12181f6aa23ae6d88fd68126
+    name: saas-api
+    type: application
+    urls:
+    - charts/saas-api-0.5.0-rc.7131170.tgz
+    version: 0.5.0-rc.7131170
+  - apiVersion: v2
+    appVersion: 22443d4
+    created: "2024-11-20T20:36:30.4404563Z"
+    description: repository for kubefirst saas-api components
+    digest: 7f80cc56281ed5be76aee76be54eaa335a9303f9180f5106fb5a1d63846d0286
+    name: saas-api
+    type: application
+    urls:
+    - charts/saas-api-0.4.0.tgz
+    version: 0.4.0
+  - apiVersion: v2
+    appVersion: 22443d4
+    created: "2024-11-20T15:43:55.01441393Z"
+    description: repository for kubefirst saas-api components
+    digest: ace473b6df62ad4b724b23270f162d22908f0c53c43df2fce414a38ea943daca
+    name: saas-api
+    type: application
+    urls:
+    - charts/saas-api-0.4.0-rc.22443d4.tgz
+    version: 0.4.0-rc.22443d4
   - apiVersion: v2
     appVersion: dacca35
     created: "2024-09-09T14:20:20.31998792Z"
@@ -9678,5 +10444,5 @@ entries:
     urls:
     - charts/saas-api-0.0.1-rc.1a09bdf.tgz
     version: 0.0.1-rc.1a09bdf
-generated: "2024-11-14T19:10:43Z"
+generated: "2024-11-22T06:55:51Z"
 serverInfo: {}
