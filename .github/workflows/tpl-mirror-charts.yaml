@@ -65,5 +65,5 @@ jobs:
             helm-push "${tgz}" "${{ inputs.registry-destination }}" --force
           done
         env:
-          HURL_HELM_REPO_USERNAME: "${{ secrets.KONSTRUCT_CHARTMUSEUM_USER }}"
-          HURL_HELM_REPO_PASSWORD: "${{ secrets.KONSTRUCT_CHARTMUSEUM_PASSWORD }}"
+          HELM_REPO_USERNAME: "${{ secrets.KONSTRUCT_CHARTMUSEUM_USER }}"
+          HELM_REPO_PASSWORD: "${{ secrets.KONSTRUCT_CHARTMUSEUM_PASSWORD }}"
