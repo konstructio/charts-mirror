@@ -35771,6 +35771,16 @@ entries:
     version: 0.1.0-rc.3148643
   kubefirst-pro-docs:
   - apiVersion: v2
+    appVersion: a5fdb86
+    created: "2024-12-23T18:42:46.682012557Z"
+    description: Kubefirst Pro documentation Helm chart
+    digest: a45eb21c0cebb2bd5d43e7ceaea910fe6c9e0d8ac7e9cba083126aa633dd8a8f
+    name: kubefirst-pro-docs
+    type: application
+    urls:
+    - charts/kubefirst-pro-docs-1.177.0.tgz
+    version: 1.177.0
+  - apiVersion: v2
     appVersion: 8e4bcfb
     created: "2024-12-19T18:12:50.155074381Z"
     description: Kubefirst Pro documentation Helm chart
@@ -40642,5 +40652,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2024-12-19T21:02:41Z"
+generated: "2024-12-23T18:42:47Z"
 serverInfo: {}
