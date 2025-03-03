@@ -38088,6 +38088,16 @@ entries:
     version: 0.1.0-rc.3148643
   kubefirst-pro-docs:
   - apiVersion: v2
+    appVersion: b63cf2e
+    created: "2025-02-24T20:00:39.080357004Z"
+    description: Kubefirst Pro documentation Helm chart
+    digest: 1301690a950d8c6b205827da4a5c2379c1626b496feaf74d6ffa0ecaa07d1cf4
+    name: kubefirst-pro-docs
+    type: application
+    urls:
+    - charts/kubefirst-pro-docs-1.214.0.tgz
+    version: 1.214.0
+  - apiVersion: v2
     appVersion: 173bc88
     created: "2025-02-19T14:24:34.631663933Z"
     description: Kubefirst Pro documentation Helm chart
@@ -43189,6 +43199,16 @@ entries:
     - charts/saas-api-1.2.0-rc.5cf95aa.tgz
     version: 1.2.0-rc.5cf95aa
   - apiVersion: v2
+    appVersion: 17e2987
+    created: "2025-02-24T17:59:54.365634342Z"
+    description: repository for kubefirst saas-api components
+    digest: b693a14146e5e75c032afb582602e93710cc2e8a547e8fadb8c2330bc1b2f527
+    name: saas-api
+    type: application
+    urls:
+    - charts/saas-api-1.2.0-rc.17e2987.tgz
+    version: 1.2.0-rc.17e2987
+  - apiVersion: v2
     appVersion: d974e6c
     created: "2025-02-06T14:58:16.067235547Z"
     description: repository for kubefirst saas-api components
@@ -44279,5 +44299,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2025-02-19T14:24:35Z"
+generated: "2025-02-24T20:00:39Z"
 serverInfo: {}
