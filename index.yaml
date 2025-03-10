@@ -42268,6 +42268,26 @@ entries:
     - charts/saas-1.2.0-rc.f93ac8d.tgz
     version: 1.2.0-rc.f93ac8d
   - apiVersion: v2
+    appVersion: 590a11c
+    created: "2025-03-06T18:01:26.986963168Z"
+    description: repository for kubefirst saas components
+    digest: 8f791819f4f5748f012c26ebf18878dd9fa6eab3584de690de93df8aef8567ab
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.590a11c.tgz
+    version: 1.2.0-rc.590a11c
+  - apiVersion: v2
+    appVersion: 15f180b
+    created: "2025-03-06T16:14:28.56004698Z"
+    description: repository for kubefirst saas components
+    digest: c8aadd5731e908fe08aac64a0021f011d80673ebb7a020932d4e08fb3d7ede4d
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.15f180b.tgz
+    version: 1.2.0-rc.15f180b
+  - apiVersion: v2
     appVersion: d974e6c
     created: "2025-02-06T14:52:53.482422297Z"
     description: repository for kubefirst saas components
@@ -44299,5 +44319,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2025-02-24T20:00:39Z"
+generated: "2025-03-06T18:01:27Z"
 serverInfo: {}
