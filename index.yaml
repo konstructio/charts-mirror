@@ -5995,6 +5995,26 @@ entries:
     version: 0.1.0-rc.7682954
   colony-ui:
   - apiVersion: v2
+    appVersion: a09b142
+    created: "2025-03-11T16:18:08.478144631Z"
+    description: A Helm chart for the Colony UI
+    digest: 87617564310c7b711ffd0275e4b9c5a606f9853992d554d48e59d6d0544a5b3b
+    name: colony-ui
+    type: application
+    urls:
+    - charts/colony-ui-0.5.0-rc.a09b142.tgz
+    version: 0.5.0-rc.a09b142
+  - apiVersion: v2
+    appVersion: "5883368"
+    created: "2025-03-13T18:24:54.297926498Z"
+    description: A Helm chart for the Colony UI
+    digest: 00fa82e5c600a1310c6d6a5c4d5e65c4a6988983ebba9fdf28d6b45833919bda
+    name: colony-ui
+    type: application
+    urls:
+    - charts/colony-ui-0.5.0-rc.5883368.tgz
+    version: 0.5.0-rc.5883368
+  - apiVersion: v2
     appVersion: b53a1b9
     created: "2024-12-19T18:24:07.360952067Z"
     description: A Helm chart for the Colony UI
@@ -33707,6 +33727,16 @@ entries:
     version: 0.1.0-rc.4d264a2
   kubefirst-docs:
   - apiVersion: v2
+    appVersion: 5d9db3d
+    created: "2025-03-10T21:45:41.757024635Z"
+    description: Kubefirst documentation Helm chart
+    digest: af1db2c43b00fad6da9bf2088ceef0850d0b7f7bd37b19a96552eba6be81acd9
+    name: kubefirst-docs
+    type: application
+    urls:
+    - charts/kubefirst-docs-1.214.0.tgz
+    version: 1.214.0
+  - apiVersion: v2
     appVersion: "0"
     created: "2025-01-22T15:27:34.584350953Z"
     description: Kubefirst documentation Helm chart
@@ -43199,6 +43229,16 @@ entries:
     version: 0.0.1-rc.8ad4a0d
   saas-api:
   - apiVersion: v2
+    appVersion: fc10a7c
+    created: "2025-03-13T01:17:27.366407303Z"
+    description: repository for kubefirst saas-api components
+    digest: 4aebcf787aad0f56d7072a3bb9dfa419266ef920ff135eb208846a1ad425a8b0
+    name: saas-api
+    type: application
+    urls:
+    - charts/saas-api-1.2.0-rc.fc10a7c.tgz
+    version: 1.2.0-rc.fc10a7c
+  - apiVersion: v2
     appVersion: d7d490d
     created: "2025-02-06T20:16:44.395301838Z"
     description: repository for kubefirst saas-api components
@@ -44319,5 +44359,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2025-03-06T18:01:27Z"
+generated: "2025-03-13T18:24:54Z"
 serverInfo: {}
