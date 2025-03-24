@@ -4201,6 +4201,16 @@ entries:
     - charts/colony-api-0.10.0-rc.d38e566.tgz
     version: 0.10.0-rc.d38e566
   - apiVersion: v2
+    appVersion: c4c4708
+    created: "2025-03-20T17:56:57.071831994Z"
+    description: A Helm chart for Kubernetes
+    digest: 82f9eb88afef6a34cc345fbcfb743a24fde21c8764af0902dc8c43a3788ead5e
+    name: colony-api
+    type: application
+    urls:
+    - charts/colony-api-0.10.0-rc.c4c4708.tgz
+    version: 0.10.0-rc.c4c4708
+  - apiVersion: v2
     appVersion: 42a3fc2
     created: "2025-02-03T19:52:03.044718537Z"
     description: A Helm chart for Kubernetes
@@ -5994,6 +6004,16 @@ entries:
     - charts/colony-push-agent-0.1.0-rc.7682954.tgz
     version: 0.1.0-rc.7682954
   colony-ui:
+  - apiVersion: v2
+    appVersion: e6f28e5
+    created: "2025-03-20T18:00:54.17857377Z"
+    description: A Helm chart for the Colony UI
+    digest: 80908bc69ba70f9b74dc39942f29ed5ab3448a2cd5d2b4310d6fe6e918ae9515
+    name: colony-ui
+    type: application
+    urls:
+    - charts/colony-ui-0.5.0-rc.e6f28e5.tgz
+    version: 0.5.0-rc.e6f28e5
   - apiVersion: v2
     appVersion: a09b142
     created: "2025-03-11T16:18:08.478144631Z"
@@ -38118,6 +38138,46 @@ entries:
     version: 0.1.0-rc.3148643
   kubefirst-pro-docs:
   - apiVersion: v2
+    appVersion: 176d6e7
+    created: "2025-03-19T18:10:38.351405695Z"
+    description: Kubefirst Pro documentation Helm chart
+    digest: 41e39f8ceb8a36d449667ea8a01a0a4e86d35627e025b6b9ef17003dd6559c34
+    name: kubefirst-pro-docs
+    type: application
+    urls:
+    - charts/kubefirst-pro-docs-1.218.0.tgz
+    version: 1.218.0
+  - apiVersion: v2
+    appVersion: 1116df7
+    created: "2025-03-19T13:47:07.040109809Z"
+    description: Kubefirst Pro documentation Helm chart
+    digest: e4a20eae3111b2b2018a4aeb69b34b8317abf91ab68432b6ce60913ab78929ea
+    name: kubefirst-pro-docs
+    type: application
+    urls:
+    - charts/kubefirst-pro-docs-1.217.0.tgz
+    version: 1.217.0
+  - apiVersion: v2
+    appVersion: dd0348b
+    created: "2025-03-18T17:56:32.990642436Z"
+    description: Kubefirst Pro documentation Helm chart
+    digest: 2dd54b107fda14d753152ac163d0944e9689af3570f96b14a69dbd3dbb792787
+    name: kubefirst-pro-docs
+    type: application
+    urls:
+    - charts/kubefirst-pro-docs-1.216.0.tgz
+    version: 1.216.0
+  - apiVersion: v2
+    appVersion: 6bff7bb
+    created: "2025-03-18T16:45:08.913384518Z"
+    description: Kubefirst Pro documentation Helm chart
+    digest: a221518ea3f5c4aea13bffa2f0e29f1a9de3798647b039f480d4015bc0a59bed
+    name: kubefirst-pro-docs
+    type: application
+    urls:
+    - charts/kubefirst-pro-docs-1.215.0.tgz
+    version: 1.215.0
+  - apiVersion: v2
     appVersion: b63cf2e
     created: "2025-02-24T20:00:39.080357004Z"
     description: Kubefirst Pro documentation Helm chart
@@ -42308,6 +42368,16 @@ entries:
     - charts/saas-1.2.0-rc.590a11c.tgz
     version: 1.2.0-rc.590a11c
   - apiVersion: v2
+    appVersion: 4b0b475
+    created: "2025-03-20T17:51:35.233789045Z"
+    description: repository for kubefirst saas components
+    digest: f4b3d9f517c575d33e3f6c68bcfc4e090706ea012c6a9aba6b0ac0c506493d2c
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.4b0b475.tgz
+    version: 1.2.0-rc.4b0b475
+  - apiVersion: v2
     appVersion: 15f180b
     created: "2025-03-06T16:14:28.56004698Z"
     description: repository for kubefirst saas components
@@ -43258,6 +43328,16 @@ entries:
     urls:
     - charts/saas-api-1.2.0-rc.5cf95aa.tgz
     version: 1.2.0-rc.5cf95aa
+  - apiVersion: v2
+    appVersion: 4b0b475
+    created: "2025-03-20T17:56:40.453361754Z"
+    description: repository for kubefirst saas-api components
+    digest: 8bbae1d5b7c6fcddd8117d9fc1b149896949a42c9b4f72fd8a440842236f6433
+    name: saas-api
+    type: application
+    urls:
+    - charts/saas-api-1.2.0-rc.4b0b475.tgz
+    version: 1.2.0-rc.4b0b475
   - apiVersion: v2
     appVersion: 17e2987
     created: "2025-02-24T17:59:54.365634342Z"
@@ -44359,5 +44439,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2025-03-13T18:24:54Z"
+generated: "2025-03-20T18:00:54Z"
 serverInfo: {}
