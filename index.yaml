@@ -39549,6 +39549,16 @@ entries:
     version: 0.1.0-rc.3148643
   kubefirst-pro-docs:
   - apiVersion: v2
+    appVersion: 5140ef7
+    created: "2025-04-14T13:59:22.724024581Z"
+    description: Kubefirst Pro documentation Helm chart
+    digest: baacf79ccb3063f618686876b44d8ce23e40e4ec468c804d3d868578e9e85c27
+    name: kubefirst-pro-docs
+    type: application
+    urls:
+    - charts/kubefirst-pro-docs-1.221.0.tgz
+    version: 1.221.0
+  - apiVersion: v2
     appVersion: 49b372f
     created: "2025-04-07T19:06:57.391336446Z"
     description: Kubefirst Pro documentation Helm chart
@@ -43809,6 +43819,36 @@ entries:
     - charts/saas-1.2.0-rc.e9d6276.tgz
     version: 1.2.0-rc.e9d6276
   - apiVersion: v2
+    appVersion: e375e54
+    created: "2025-04-16T14:42:59.998773138Z"
+    description: repository for kubefirst saas components
+    digest: 459ac72b45828c3b4c3994acc38072ec7594fc2536e2437c4542675e7f95e5f4
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.e375e54.tgz
+    version: 1.2.0-rc.e375e54
+  - apiVersion: v2
+    appVersion: e27289d
+    created: "2025-04-17T14:14:32.784400195Z"
+    description: repository for kubefirst saas components
+    digest: e41def5de359a7ff622d03171d417dfda608f3622479879ec4a99db2527da2a3
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.e27289d.tgz
+    version: 1.2.0-rc.e27289d
+  - apiVersion: v2
+    appVersion: d3d7f1c
+    created: "2025-04-16T20:34:48.499122059Z"
+    description: repository for kubefirst saas components
+    digest: 4530ef1141ac7bdaf626226016ad696090db737cd4d5245f54753bed99eff4a9
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.d3d7f1c.tgz
+    version: 1.2.0-rc.d3d7f1c
+  - apiVersion: v2
     appVersion: d2ff99b
     created: "2025-04-09T20:54:22.121834213Z"
     description: repository for kubefirst saas components
@@ -43819,6 +43859,16 @@ entries:
     - charts/saas-1.2.0-rc.d2ff99b.tgz
     version: 1.2.0-rc.d2ff99b
   - apiVersion: v2
+    appVersion: cd67906
+    created: "2025-04-17T15:01:59.29946959Z"
+    description: repository for kubefirst saas components
+    digest: cb436f27f621c87f9d118d0d6b33558c6c451f851e3c3a3565467c7d06c20a61
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.cd67906.tgz
+    version: 1.2.0-rc.cd67906
+  - apiVersion: v2
     appVersion: c3593b1
     created: "2025-04-09T18:49:26.476111017Z"
     description: repository for kubefirst saas components
@@ -43828,6 +43878,76 @@ entries:
     urls:
     - charts/saas-1.2.0-rc.c3593b1.tgz
     version: 1.2.0-rc.c3593b1
+  - apiVersion: v2
+    appVersion: b5fe298
+    created: "2025-04-16T00:51:00.023872062Z"
+    description: repository for kubefirst saas components
+    digest: 8fc8d005fa7ebdfef9391f2754e1cdb4771ccea12bd85442018b89e43e7204cb
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.b5fe298.tgz
+    version: 1.2.0-rc.b5fe298
+  - apiVersion: v2
+    appVersion: af7b5b7
+    created: "2025-04-16T21:32:11.617144921Z"
+    description: repository for kubefirst saas components
+    digest: b0439dc5a91292f9ca26b24e3902e1bd730117e967a71b6eec7a1dda66a82c89
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.af7b5b7.tgz
+    version: 1.2.0-rc.af7b5b7
+  - apiVersion: v2
+    appVersion: 9ea626f
+    created: "2025-04-16T18:48:15.662895194Z"
+    description: repository for kubefirst saas components
+    digest: b920177da9f3dd5b104f129b21c006f21de15e4e1b4cde1d0700ac93667872fc
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.9ea626f.tgz
+    version: 1.2.0-rc.9ea626f
+  - apiVersion: v2
+    appVersion: 925bf93
+    created: "2025-04-16T16:21:44.003697665Z"
+    description: repository for kubefirst saas components
+    digest: 36cf8699dedb14f3f61db6777b3fcce18845e2ae78e272dbba307fcaf16ad0dd
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.925bf93.tgz
+    version: 1.2.0-rc.925bf93
+  - apiVersion: v2
+    appVersion: 8fdc3b6
+    created: "2025-04-16T22:10:40.625253233Z"
+    description: repository for kubefirst saas components
+    digest: e90f27a38b11ee958f650ed8e29275119d08b8fd24fc13c3b9311c969c5345cf
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.8fdc3b6.tgz
+    version: 1.2.0-rc.8fdc3b6
+  - apiVersion: v2
+    appVersion: 8f1dbd0
+    created: "2025-04-16T18:31:52.92972333Z"
+    description: repository for kubefirst saas components
+    digest: d71b4ed008ffc0fa8f1d358ef1d49a384ee236d4218f9a15e6661462e8fa93be
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.8f1dbd0.tgz
+    version: 1.2.0-rc.8f1dbd0
+  - apiVersion: v2
+    appVersion: 8baa543
+    created: "2025-04-16T18:34:10.798733339Z"
+    description: repository for kubefirst saas components
+    digest: 06a08a0f4d6cb1619e21d49c4f67997e95b1589a6ae792da883b4edb15c222ea
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.8baa543.tgz
+    version: 1.2.0-rc.8baa543
   - apiVersion: v2
     appVersion: 855e8ed
     created: "2025-04-11T00:01:36.13489591Z"
@@ -43849,6 +43969,26 @@ entries:
     - charts/saas-1.2.0-rc.8404a3d.tgz
     version: 1.2.0-rc.8404a3d
   - apiVersion: v2
+    appVersion: 71f8d02
+    created: "2025-04-16T22:33:06.342107591Z"
+    description: repository for kubefirst saas components
+    digest: 8a913af649a452a56714bf146b637285d486d50b81250b1b57ce738b492221ca
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.71f8d02.tgz
+    version: 1.2.0-rc.71f8d02
+  - apiVersion: v2
+    appVersion: 6f320ff
+    created: "2025-04-16T21:29:55.857031733Z"
+    description: repository for kubefirst saas components
+    digest: fcd8a4d4a62e23983b9c1827fe190341809609a22d10a6d81d500bc300ce9772
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.6f320ff.tgz
+    version: 1.2.0-rc.6f320ff
+  - apiVersion: v2
     appVersion: 6661d06
     created: "2025-04-10T22:25:23.57604984Z"
     description: repository for kubefirst saas components
@@ -43858,6 +43998,16 @@ entries:
     urls:
     - charts/saas-1.2.0-rc.6661d06.tgz
     version: 1.2.0-rc.6661d06
+  - apiVersion: v2
+    appVersion: 62123f4
+    created: "2025-04-16T16:57:25.174874891Z"
+    description: repository for kubefirst saas components
+    digest: 5fac640de52d1fa32b3662ad154bf481ceab9b9631bad6142eb8e209a29fe5fc
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.62123f4.tgz
+    version: 1.2.0-rc.62123f4
   - apiVersion: v2
     appVersion: 5d3ef81
     created: "2025-04-10T18:30:27.885744619Z"
@@ -43899,6 +44049,26 @@ entries:
     - charts/saas-1.2.0-rc.582621b.tgz
     version: 1.2.0-rc.582621b
   - apiVersion: v2
+    appVersion: 54a3ee9
+    created: "2025-04-17T00:58:48.130651117Z"
+    description: repository for kubefirst saas components
+    digest: 502a62f3a450b3ac675a7986b45705e31e5d51e2dfe7c4d90fbb523ba62a2758
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.54a3ee9.tgz
+    version: 1.2.0-rc.54a3ee9
+  - apiVersion: v2
+    appVersion: 4eec3be
+    created: "2025-04-17T01:00:10.208880744Z"
+    description: repository for kubefirst saas components
+    digest: a7303c503b25e9518481e38de09e1d4df3fc3c53dd5ab6dc718bd75ad996c177
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.4eec3be.tgz
+    version: 1.2.0-rc.4eec3be
+  - apiVersion: v2
     appVersion: 4b0b475
     created: "2025-03-20T17:51:35.233789045Z"
     description: repository for kubefirst saas components
@@ -43908,6 +44078,16 @@ entries:
     urls:
     - charts/saas-1.2.0-rc.4b0b475.tgz
     version: 1.2.0-rc.4b0b475
+  - apiVersion: v2
+    appVersion: 3887ef4
+    created: "2025-04-17T01:45:33.951394123Z"
+    description: repository for kubefirst saas components
+    digest: e7c3002fa45fde455fe15c0e0638ec0836d8d9d9668aa45eeb1e6eb289d28c5a
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.3887ef4.tgz
+    version: 1.2.0-rc.3887ef4
   - apiVersion: v2
     appVersion: 1e38cea
     created: "2025-04-09T21:30:08.782646722Z"
@@ -43919,6 +44099,16 @@ entries:
     - charts/saas-1.2.0-rc.1e38cea.tgz
     version: 1.2.0-rc.1e38cea
   - apiVersion: v2
+    appVersion: 1d205f0
+    created: "2025-04-17T01:17:50.999672322Z"
+    description: repository for kubefirst saas components
+    digest: 597991edc498d8093f0f358958621c5c5154678e615c1cfb39e8ae4678c31714
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.1d205f0.tgz
+    version: 1.2.0-rc.1d205f0
+  - apiVersion: v2
     appVersion: 15f180b
     created: "2025-03-06T16:14:28.56004698Z"
     description: repository for kubefirst saas components
@@ -43928,6 +44118,26 @@ entries:
     urls:
     - charts/saas-1.2.0-rc.15f180b.tgz
     version: 1.2.0-rc.15f180b
+  - apiVersion: v2
+    appVersion: 0a3f7c4
+    created: "2025-04-16T23:22:51.035963007Z"
+    description: repository for kubefirst saas components
+    digest: 92621acff2fa03ab9403d3d73b0bd5a57ce0982be287356402a3f686fb86a131
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.0a3f7c4.tgz
+    version: 1.2.0-rc.0a3f7c4
+  - apiVersion: v2
+    appVersion: 076bb0d
+    created: "2025-04-16T17:55:28.866746337Z"
+    description: repository for kubefirst saas components
+    digest: 3cb8f5b20f26bd5b53d194f424891b2e6343c9492741484a8924f49b9d6c33c3
+    name: saas
+    type: application
+    urls:
+    - charts/saas-1.2.0-rc.076bb0d.tgz
+    version: 1.2.0-rc.076bb0d
   - apiVersion: v2
     appVersion: d974e6c
     created: "2025-02-06T14:52:53.482422297Z"
@@ -44850,6 +45060,16 @@ entries:
     - charts/saas-api-1.2.0-rc.fc10a7c.tgz
     version: 1.2.0-rc.fc10a7c
   - apiVersion: v2
+    appVersion: ec04173
+    created: "2025-04-16T21:20:03.913179863Z"
+    description: repository for kubefirst saas-api components
+    digest: 8a85f78700b84d6295f19f2ad211a0f6c62eba431b4bfb664f40cafdb5a9bad1
+    name: saas-api
+    type: application
+    urls:
+    - charts/saas-api-1.2.0-rc.ec04173.tgz
+    version: 1.2.0-rc.ec04173
+  - apiVersion: v2
     appVersion: d7d490d
     created: "2025-02-06T20:16:44.395301838Z"
     description: repository for kubefirst saas-api components
@@ -44869,6 +45089,16 @@ entries:
     urls:
     - charts/saas-api-1.2.0-rc.bb5e6c4.tgz
     version: 1.2.0-rc.bb5e6c4
+  - apiVersion: v2
+    appVersion: b5fe298
+    created: "2025-04-16T00:56:32.125996595Z"
+    description: repository for kubefirst saas-api components
+    digest: 5df24cf672f617874a6d3e407416129bad6011b2d4102e2f6828a0a3adf085d7
+    name: saas-api
+    type: application
+    urls:
+    - charts/saas-api-1.2.0-rc.b5fe298.tgz
+    version: 1.2.0-rc.b5fe298
   - apiVersion: v2
     appVersion: 855e8ed
     created: "2025-04-11T00:06:44.023092331Z"
@@ -44919,6 +45149,16 @@ entries:
     urls:
     - charts/saas-api-1.2.0-rc.21a83a5.tgz
     version: 1.2.0-rc.21a83a5
+  - apiVersion: v2
+    appVersion: 1b8be83
+    created: "2025-04-14T17:07:56.801678457Z"
+    description: repository for kubefirst saas-api components
+    digest: 02ce88c649f655399fe6f6fafe90a7de7cb247807c6ebb444bfd4f44ebb9e2ae
+    name: saas-api
+    type: application
+    urls:
+    - charts/saas-api-1.2.0-rc.1b8be83.tgz
+    version: 1.2.0-rc.1b8be83
   - apiVersion: v2
     appVersion: 17e2987
     created: "2025-02-24T17:59:54.365634342Z"
@@ -46040,5 +46280,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2025-04-11T05:57:29Z"
+generated: "2025-04-17T15:01:59Z"
 serverInfo: {}
