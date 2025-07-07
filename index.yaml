@@ -42190,6 +42190,16 @@ entries:
     - charts/marketing-1.0.0-rc.3078fc9.tgz
     version: 1.0.0-rc.3078fc9
   - apiVersion: v2
+    appVersion: 054757e
+    created: "2025-07-03T18:29:36.79881245Z"
+    description: A Helm chart for Kubernetes
+    digest: 39f37f51fc2a56d005f2267396525307f4e5e42a785079028d08d777ae430eaf
+    name: marketing
+    type: application
+    urls:
+    - charts/marketing-0.40.0-rc.054757e.tgz
+    version: 0.40.0-rc.054757e
+  - apiVersion: v2
     appVersion: 431fe7c
     created: "2025-06-24T18:32:24.4170805Z"
     description: A Helm chart for Kubernetes
@@ -47649,5 +47659,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2025-06-25T21:20:06Z"
+generated: "2025-07-03T18:29:37Z"
 serverInfo: {}
