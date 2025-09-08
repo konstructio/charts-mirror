@@ -17152,6 +17152,22 @@ entries:
     version: 0.1.0-rc.9783390
   kubefirst:
   - apiVersion: v2
+    created: "2025-09-03T17:51:21.744852668Z"
+    dependencies:
+    - name: console
+      repository: https://charts.konstruct.io
+      version: 2.72.0-rc.7e5abd4
+    - name: kubefirst-api
+      repository: https://charts.konstruct.io
+      version: 0.135.0-rc.2d3abfc
+    description: kubefirst helm chart
+    digest: b343dc4c3766c03fd3e2fdf56812c088706e64690d42b4182f2800ca5d231087
+    name: kubefirst
+    type: application
+    urls:
+    - charts/kubefirst-2.9.2-rc3.tgz
+    version: 2.9.2-rc3
+  - apiVersion: v2
     created: "2025-08-30T13:35:42.959176911Z"
     dependencies:
     - name: console
@@ -30850,6 +30866,16 @@ entries:
     - charts/kubefirst-0.0.1.tgz
     version: 0.0.1
   kubefirst-api:
+  - apiVersion: v2
+    appVersion: 2d3abfc
+    created: "2025-09-03T17:50:30.424894351Z"
+    description: A Helm chart for Kubernetes
+    digest: 5f2e4c53ff996c2caf4473bfca8b3a73e020390e46145406431fc9d614a478a6
+    name: kubefirst-api
+    type: application
+    urls:
+    - charts/kubefirst-api-0.135.0-rc.2d3abfc.tgz
+    version: 0.135.0-rc.2d3abfc
   - apiVersion: v2
     appVersion: f0c79c0
     created: "2025-08-28T05:03:47.555981295Z"
@@ -51463,5 +51489,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2025-08-30T13:35:43Z"
+generated: "2025-09-03T17:51:22Z"
 serverInfo: {}
