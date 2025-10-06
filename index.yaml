@@ -39716,6 +39716,38 @@ entries:
     version: 1.142.0
   kubefirst-pro:
   - apiVersion: v2
+    created: "2025-10-01T18:53:06.644736441Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.22.0
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.29.0-rc.c89f319
+    description: kubefirst pro helm chart
+    digest: 5274be756a80f935cc238fd4f47f93f1e3142b6139335e9f79136291fabbb54e
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.10.2-rc2.tgz
+    version: 2.10.2-rc2
+  - apiVersion: v2
+    created: "2025-10-01T18:13:24.197490109Z"
+    dependencies:
+    - name: kubefirst-pro-api
+      repository: https://charts.konstruct.io
+      version: 0.22.0
+    - name: kubefirst-pro-ui
+      repository: https://charts.konstruct.io
+      version: 0.29.0-rc.58af5e9
+    description: kubefirst pro helm chart
+    digest: 715130e1a22a26cb0c8511b41127b4b5771f61c4c09b8575fc1e350fd815fbf5
+    name: kubefirst-pro
+    type: application
+    urls:
+    - charts/kubefirst-pro-2.10.2-rc1.tgz
+    version: 2.10.2-rc1
+  - apiVersion: v2
     created: "2025-09-26T17:11:25.738485285Z"
     dependencies:
     - name: kubefirst-pro-api
@@ -45232,6 +45264,26 @@ entries:
     - charts/kubefirst-pro-docs-1.165.0.tgz
     version: 1.165.0
   kubefirst-pro-ui:
+  - apiVersion: v2
+    appVersion: c89f319
+    created: "2025-10-01T18:52:16.180691834Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: 550ab765fd463606ed1647e3df54de984bb75f2c2aaf499bec46250b84f55cfe
+    name: kubefirst-pro-ui
+    type: application
+    urls:
+    - charts/kubefirst-pro-ui-0.29.0-rc.c89f319.tgz
+    version: 0.29.0-rc.c89f319
+  - apiVersion: v2
+    appVersion: 58af5e9
+    created: "2025-10-01T18:12:31.853396548Z"
+    description: A Helm chart for the Kubefirst Console
+    digest: 494af0a6845e31524a46a28460e331081921675dfe2f74a6b4fc7ac08440bb7c
+    name: kubefirst-pro-ui
+    type: application
+    urls:
+    - charts/kubefirst-pro-ui-0.29.0-rc.58af5e9.tgz
+    version: 0.29.0-rc.58af5e9
   - apiVersion: v2
     appVersion: 635d9dc
     created: "2025-09-25T03:41:57.214542243Z"
@@ -52193,5 +52245,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2025-09-26T17:11:26Z"
+generated: "2025-10-01T18:53:07Z"
 serverInfo: {}
