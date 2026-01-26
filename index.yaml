@@ -9018,6 +9018,16 @@ entries:
     version: 0.1.3-rc.0afb218
   colony-api:
   - apiVersion: v2
+    appVersion: 6a106f1
+    created: "2026-01-20T19:15:24.306629329Z"
+    description: A Helm chart for Kubernetes
+    digest: 4d0418ad8d465184d6ff2cca83962917c49427552a574d27046fb71c9b0181fd
+    name: colony-api
+    type: application
+    urls:
+    - charts/colony-api-0.14.0-rc.6a106f1.tgz
+    version: 0.14.0-rc.6a106f1
+  - apiVersion: v2
     appVersion: e853c58
     created: "2026-01-17T05:40:05.024406906Z"
     description: A Helm chart for Kubernetes
@@ -54692,5 +54702,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2026-01-17T05:57:33Z"
+generated: "2026-01-20T19:15:24Z"
 serverInfo: {}
