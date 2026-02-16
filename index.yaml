@@ -11106,6 +11106,16 @@ entries:
     version: 0.1.0-rc.3253941
   colony-docs:
   - apiVersion: v2
+    appVersion: bab2f53
+    created: "2026-02-09T00:35:46.907243727Z"
+    description: colony documentation Helm chart
+    digest: d268629db2f04ff96e5b1bfb10286000a958b8c6df5e069ee5a5bdf47b4addd6
+    name: colony-docs
+    type: application
+    urls:
+    - charts/colony-docs-1.180.0.tgz
+    version: 1.180.0
+  - apiVersion: v2
     appVersion: 0f13585
     created: "2026-02-08T15:04:56.901869512Z"
     description: colony documentation Helm chart
@@ -55225,5 +55235,5 @@ entries:
     urls:
     - charts/scaffold-mock-0.5.0-rc.24a7eb1.tgz
     version: 0.5.0-rc.24a7eb1
-generated: "2026-02-08T15:04:57Z"
+generated: "2026-02-09T00:35:47Z"
 serverInfo: {}
